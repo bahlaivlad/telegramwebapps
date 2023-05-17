@@ -54,7 +54,7 @@
    const queryString = window.location.search;  // get URL
    console.log(queryString);
    const urlParams = new URLSearchParams(queryString);   // parse URL
-   let hnt = document.getElementByClassName("hint");
+   let hnt = document.getElementsByClassName("hint")[0];
    hnt.innerText = urlParams.get("p");
    
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
